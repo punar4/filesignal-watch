@@ -1,0 +1,20 @@
+# Deploy on Render: New > Blueprint > pick this repo.
+services:
+  - type: web
+    name: filesignal-watch
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: INTERVAL_SEC
+        value: "180"
+      - key: DASH_PASSWORD      # password for the dashboard
+        sync: false
+      - key: RESEND_API_KEY     # email alerts (see SETUP.md)
+        sync: false
+      - key: ALERT_EMAIL_FROM
+        sync: false
+      - key: ALERT_EMAIL_TO
+        sync: false
