@@ -1,0 +1,6 @@
+[
+  { "id": "gst", "name": "GST portal (login)", "url": "https://services.gst.gov.in/services/login", "returns": ["GSTR-1", "GSTR-3B", "GSTR-2B", "IMS"] },
+  { "id": "gst-home", "name": "GST portal (home)", "url": "https://www.gst.gov.in/", "returns": [] },
+  { "id": "itd", "name": "Income tax e-filing", "url": "https://eportal.incometax.gov.in/iec/foservices/", "returns": ["ITR", "Challan 281"] },
+  { "id": "traces", "name": "TRACES (TDS)", "url": "https://www.tdscpc.gov.in/app/login.xhtml", "returns": ["Form 140", "Form 131", "TDS"] }
+]
